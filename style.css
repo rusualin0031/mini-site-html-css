@@ -21,3 +21,20 @@ body {
     font-size: clamp(1rem, 2vw, 2rem);
     line-height: 1.5em;
 }
+    header {
+
+    }
+        .Avatar {
+            display: block;
+            float: left;
+            width: 100px;
+            height: auto;
+        }
+
+    main {
+
+    }
+
+        .listaLinkuri {
+
+        }
