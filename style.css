@@ -22,7 +22,8 @@ body {
     line-height: 1.5em;
 }
 @media (min-width: 300px) { .Container { margin: 2vh; padding: 2rem; border-radius: 2rem;} }
-
+@media (min-width: 800px) { .Container { margin: 4vw; padding: 3rem; }
+ 
 header {
 
 }
@@ -43,16 +44,20 @@ header {
     line-height: 1em;
 }
 
-main {
-
+.DescrierePrincipala {
+    display: block;
+    margin: 0.5em 0 1.5em;
 }
 
-.listaLinkuri {
+main {
+    clear: both;
+}
+
+.ListaLinkuri {
     display: block;
     margin: 0;
     padding: 0;
 }
-
 
 .ListaItem{
     display: block;
@@ -87,4 +92,5 @@ main {
     overflow: hidden;
     text-overflow: ellipsis;
 }
+@media (min-width: 1200px ) { .ListaLinkuri { display: grid; grid-template-columns: 1fr 1fr; } } 
 
