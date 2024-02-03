@@ -21,8 +21,8 @@ body {
     font-size: clamp(1rem, 2vw, 2rem);
     line-height: 1.5em;
 }
-@media (min-width: 300px) { .Container { margin: 2vh; padding: 2rem; border-radius: 2rem;} }
-@media (min-width: 800px) { .Container { margin: 4vw; padding: 3rem; }
+@media (min-width: 500px) { .Container { margin: 2vh; padding: 2rem; border-radius: 2rem;} }
+@media (min-width: 800px) { .Container { margin: 6vw; padding: 3rem; }
  
 header {
 
@@ -30,12 +30,13 @@ header {
 
 .Avatar {
     display: block;
-    width: 112px;
-    height: auto;
+    width: 110px;
+    height: 110px;
     margin: 0 1em 1em 0;
     border-radius: 50%;
 }
 @media (min-width: 380px) { .Avatar {float: left;} } 
+@media (min-width: 930px) { .Avatar {width: clamp(130px, 14vw, 12rem);} } 
 
 .TitlulPaginii {
     display: block;
@@ -92,5 +93,5 @@ main {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-@media (min-width: 1200px ) { .ListaLinkuri { display: grid; grid-template-columns: 1fr 1fr; } } 
+@media (min-width: 1800px ) { .ListaLinkuri { display: grid; grid-template-columns: 1fr 1fr; } } 
 
