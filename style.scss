@@ -1,5 +1,5 @@
 html {
-    background: black url(background2.jpg) center center no-repeat;
+    background: black url("background2.jpg") center center no-repeat;
     background-size: cover;
     color: white;
 }
@@ -11,8 +11,9 @@ body {
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.5em;
+
+    @media (min-width: 500px) { display: grid; }
 }
-@media (min-width: 500px) { body { display: grid;} }
 
 
 .Container {
@@ -20,9 +21,10 @@ body {
     padding: 1rem;
     font-size: clamp(1rem, 2vw, 2rem);
     line-height: 1.5em;
+
+    @media (min-width: 300px) { margin: 2vh; padding: 2rem; border-radius: 2rem;} 
+    @media (min-width: 500px) { margin: 7vw; padding: 3rem; }
 }
-@media (min-width: 500px) { .Container { margin: 2vh; padding: 2rem; border-radius: 2rem;} }
-@media (min-width: 800px) { .Container { margin: 6vw; padding: 3rem; }
  
 header {
 
@@ -30,8 +32,8 @@ header {
 
 .Avatar {
     display: block;
-    width: 110px;
-    height: 110px;
+    width: 112px;
+    height: auto;
     margin: 0 1em 1em 0;
     border-radius: 50%;
 }
