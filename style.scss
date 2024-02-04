@@ -13,7 +13,7 @@ body {
     line-height: 1.5em;
 
     @media (min-width: 500px) { display: grid; }
-}
+} 
 
 
 .Container {
@@ -36,9 +36,9 @@ header {
     height: auto;
     margin: 0 1em 1em 0;
     border-radius: 50%;
+    @media (min-width: 380px) {float: left;} 
+    @media (min-width: 930px) {width: clamp(130px, 14vw, 12rem);} 
 }
-@media (min-width: 380px) { .Avatar {float: left;} } 
-@media (min-width: 930px) { .Avatar {width: clamp(130px, 14vw, 12rem);} } 
 
 .TitlulPaginii {
     display: block;
@@ -50,6 +50,8 @@ header {
 .DescrierePrincipala {
     display: block;
     margin: 0.5em 0 1.5em;
+
+    @media ( min-width: 500px ){ margin-bottom: 0.5em;}
 }
 
 main {
@@ -94,6 +96,8 @@ main {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+
+    @media (min-width: 1800px ) { display: grid; grid-template-columns: 1fr 1fr; } 
 }
-@media (min-width: 1800px ) { .ListaLinkuri { display: grid; grid-template-columns: 1fr 1fr; } } 
+ 
 
