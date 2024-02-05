@@ -50,7 +50,7 @@ header {
 .SubtitlulPaginii {
     display: block;
     margin: 0;
-    font-size: 1rem;
+    font-size: clamp(1rem, 2vw, 1rem);
     font-weight: 100;
     line-height: 1em;
 }
