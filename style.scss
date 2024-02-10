@@ -1,3 +1,15 @@
+@charset "UTF-8";
+
+/* Typeface source: https://rsms.me/inter/ */
+@font-face {
+	font-family: 'Inter';
+	font-weight: 100 900;
+	font-display: swap;
+	font-style: normal;
+	font-named-instance: 'Regular';
+	src: url("./Inter-roman.var.woff2?v=3.18") format("woff2");
+}
+
 html {
     background: black url("background2.jpg") center center no-repeat;
     background-size: cover;
@@ -27,17 +39,22 @@ body {
 }
  
 header {
-
+    display: block;
 }
 
 .Avatar {
     display: block;
-    width: 112px;
-    height: auto;
     margin: 0 1em 1em 0;
-    border-radius: 50%;
+    width: 112px;
     @media (min-width: 380px) {float: left;} 
     @media (min-width: 930px) {width: clamp(130px, 14vw, 12rem);} 
+}
+
+.Avatar img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
 }
 
 .TitlulPaginii {

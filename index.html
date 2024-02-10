@@ -11,6 +11,7 @@
         <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta name="description" content="Linkuri si Profiluri de  social media">
+        <link rel="canonical" href="https://rusualin0031.github.io/mini-site-html-css/">
         <meta property="og:title" content="Rusu Alin - Link-uri utile">
         <meta property="og:description" content="Toate linkurile accesibile. v2">
         <meta property="og:type" content="website">
@@ -23,32 +24,51 @@
 
         <!-- design -->
         <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png" />
-		<link rel="icon" type="image/x-icon" href="./favicon.ico" />
-		<link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-		<link rel="apple-touch-icon" href="./apple-touch-icon.png" />
-		<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#4f6df5" />
-		<meta name="msapplication-TileColor" content="#ffffff" />
-		<link rel="manifest" href="./my.webmanifest" />
-		<meta name="apple-mobile-web-app-title" content="Viorel Mocanu Link-uri" />
-		<meta name="application-name" content="Viorel Mocanu Link-uri" />
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="default" />
-		<meta name="mobile-web-app-capable" content="yes" />
-		<meta name="apple-touch-fullscreen" content="yes" />
-		<meta name="theme-color" content="#ffffff" />
-
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+		<link rel="icon" type="image/x-icon" href="./favicon.ico">
+		<link rel="icon" type="image/svg+xml" href="./favicon.svg">
+		<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+		<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#4f6df5">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<link rel="manifest" href="./my.webmanifest">
+		<meta name="apple-mobile-web-app-title" content="Alin Rusu Link-uri">
+		<meta name="application-name" content="Alin Rusu Link-uri">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="theme-color" content="#ffffff">
         <meta name="theme-color" content="#4F6DF5">
 
-        <link rel="canonical" href="https://rusualin0031.github.io/mini-site-html-css/">
-        
+        <!-- optimize -->
+		<script type="module">
+			document.documentElement.classList.remove('no-js');
+			document.documentElement.classList.add('js');
+		</script>
+		<link rel="preload" href="./Inter-roman.var.woff2" as="font" type="font/woff2" crossorigin>
         
     </head>
     <body itemscope="" itemtype="https://schema.org/ProfilePage">
         <div class="Container" itemscope="" itemtype="https://schema.org/Person">
             <header>
-                <img class="Avatar" src="image.png" width="300" height="300" alt=" Imagine de profil Alin Rusu">
+                <picture class="Avatar">
+                    <source type="image/webp" srcset="
+                    image-112.png 112w,
+                    image-192.png 192w
+                    " sizes="
+                    (max-width: 929px) 112px,
+                    (max-width: 930px) clamp(130px, 14vw, 12rem)
+                    ">
+                    <img srcset="
+                    image-112.png 112w,
+                    image-192.png 192w
+                    " sizes="
+                    (max-width: 929px) 112px,
+                    (max-width: 930px) clamp(130px, 14vw, 12rem)
+                    " src="@TODO" alt="Imagine de profil" loading="lazy" decoding="async" width="112"
+                    height="112" itemprop="image">
+                </picture>
                 <h1 class="TitlulPaginii">
                     <strong itemprop="name">Alin Rusu </strong> <!-- Pentru motive de SEO -->
                 </h1>
