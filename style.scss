@@ -125,5 +125,19 @@ main {
 
     @media (min-width: 1800px ) { display: grid; grid-template-columns: 1fr 1fr; } 
 }
+
+/* Pentru a se misca imaginea mai incet pe ecran */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration:  0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
  
 
